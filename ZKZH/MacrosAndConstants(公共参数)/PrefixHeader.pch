@@ -1,0 +1,99 @@
+//
+//  PrefixHeader.pch
+//  PlayCarParadise
+//
+//  Created by lius on 2017/10/10.
+//  Copyright © 2017年 CarFun. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+//typedef enum{
+//    SearchTypeOfBrand   = 0,  //品牌搜索
+//    SearchTypeOfRegion  = 1,  //地区搜索
+//
+//}SearchType;
+//#import "CustomMacros.h"
+//#import "BaseViewController.h"
+//#import <Masonry.h>
+//#import <POP.h>
+//#import <UIImageView+WebCache.h>
+//#import <UIButton+WebCache.h>
+//#import "ToolsObject.h"
+//#import "PublicFunction.h"
+//#import <SVProgressHUD.h>
+//#import "UIColor+Hex.h"
+//#import <MJExtension.h>
+//#import "UIView+XJExtension.h"
+//#import "PlayCarNetWorkManager.h"
+//#import "NetworkingMacros.h"
+//#import "UserLoginModel.h"
+//#import "CommonConstants.h"
+//#import "APRefreshNormalHeader.h"
+//#import "APRefreshAutoNormalFooter.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <NIMSDK/NIMSDK.h>
+#import <NIMAVChat/NIMAVChat.h>
+#import "NTESGlobalMacro.h"
+#import "NIMKit.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+
+typedef enum{
+    SearchTypeOfBrand   = 0,  //品牌搜索
+    SearchTypeOfRegion  = 1,  //地区搜索
+    
+}SearchType;
+#import "CustomMacros.h"
+#import "BaseViewController.h"
+#import "RedView.h"
+#import "RedBagHistoryDataModel.h"
+#import <Masonry.h>
+#import <POP.h>
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+#import "ToolsObject.h"
+#import "IMCustomTools.h"
+#import "PublicFunction.h"
+#import "FunctionDefine.h"
+#import <SVProgressHUD.h>
+#import "UIColor+Hex.h"
+#import <MJExtension.h>
+#import "UIView+XJExtension.h"
+#import "PlayCarNetWorkManager.h"
+#import "NetworkingMacros.h"
+#import "UserLoginModel.h"
+#import "CommonConstants.h"
+#import "APRefreshNormalHeader.h"
+#import "APRefreshAutoNormalFooter.h"
+#import "UIBarButtonItem+Item.h"
+#import "UIResponder+NextResponder.h"
+#import "LanguageTool.h"
+#import "UIView+Toast.h"
+#import "YCXMenu.h"
+#import "YCXMenuItem.h"
+#import <UMMobClick/MobClick.h>
+#import "iStoreUMengAnalyticsBaseViewController.h"
+#import "NSString+Extension.h"
+
+#ifdef DEBUG
+static DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static DDLogLevel ddLogLevel = DDLogLevelInfo;
+#endif
+
+#define NTES_USE_CLEAR_BAR - (BOOL)useClearBar{return YES;}
+
+#define NTES_FORBID_INTERACTIVE_POP - (BOOL)forbidInteractivePop{return YES;}
+
+
+#endif
+
+
+#endif /* PrefixHeader_pch */
